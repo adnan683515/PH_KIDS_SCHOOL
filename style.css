@@ -358,6 +358,7 @@ hr {
 
 .marquee-text {
     animation: marquee 15s linear infinite;
+    text-wrap: nowrap;
 
 }
 
