@@ -250,7 +250,8 @@ hr {
     justify-content: center;
     align-items: center;
 }
-.title_stories{
+
+.title_stories {
     font-size: 2.2rem;
 }
 
@@ -282,7 +283,8 @@ hr {
 .stories_card h2 {
     padding: 1.5rem 1rem;
 }
-.card_text_size{
+
+.card_text_size {
     padding: .5rem 1rem;
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
@@ -292,7 +294,8 @@ hr {
 .stories_card p {
     padding: 2rem 1rem;
 }
-.button_stories{
+
+.button_stories {
     margin: 0 1rem;
     padding: 1rem 2.5rem;
     border-radius: 1.5rem;
@@ -302,24 +305,114 @@ hr {
     top: -1.7rem;
     border: none;
 }
-.seconde_stories_car button{
+
+.seconde_stories_car button {
     background-color: var(--orange);
     color: black;
 }
-.third_card button{
+
+.third_card button {
     background-color: rgb(46, 231, 49);
     color: black;
 
 }
-.fourth_card button{
+
+.fourth_card button {
     background-color: #5D58EF;
 }
-.fifth_card button{
-    background-color:#01ACFD;
+
+.fifth_card button {
+    background-color: #01ACFD;
     /* color: black; */
 }
+
+.view_all_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.view_all_btn button {
+    padding: 1rem 4rem;
+    background-color: var(--black-color);
+    border: none;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
 /* main section end */
 
+
+/* challage accepted */
+.marquue_section{
+    margin-top: 2rem;
+}
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+
+.marquee-text {
+    animation: marquee 15s linear infinite;
+
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+
+    }
+}
+
+/* foooter section start */
+footer {
+    background-color: var(--sky-blue);
+    color: var(--white-color);
+}
+
+.footer_container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    padding-top: 4rem;
+    padding-bottom: 4em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.foot_log_box {
+    display: flex;
+    align-items: center;
+}
+
+.logo_container_keepINTouch {
+    display: flex;
+    gap: 0 1rem;
+}
+
+.about_school {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.footer_card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem 0;
+}
+
+.footer_card p {
+    width: 80%;
+}
+
+/* footer section end */
 
 
 /* mobile media query start */
@@ -381,31 +474,43 @@ hr {
     .card_container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .stories_card_div{
-        grid-template-columns: repeat(1,1fr);
+
+    .stories_card_div {
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: none;
     }
-    .stories_big_div{
+
+    .stories_big_div {
         display: none;
     }
-    .colour_out_side_section{
-        width: 90%;
+
+    .colour_out_side_section {
+        width: 100%;
         margin: auto;
     }
-    .stories_section{
+
+    .stories_section {
         width: 100%;
         margin-top: 0;
         margin-bottom: 0;
     }
-    .stories_card img{
+
+    .stories_card img {
         width: 100%;
     }
-    .colour_section{
+
+    .colour_section {
         margin-top: 1.6rem;
 
     }
+
     .stories_card_div {
         margin: 0 0;
+    }
+
+    .footer_container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem 0;
     }
 }
 
