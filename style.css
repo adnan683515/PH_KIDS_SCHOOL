@@ -514,7 +514,10 @@ footer {
     .stories_card img {
         width: 100%;
     }
-
+    .stories_card h4{
+        font-size: small;
+    
+    }
 
     .card_text_size {
         padding: .3rem 1rem;
