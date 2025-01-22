@@ -346,15 +346,15 @@ hr {
 
 
 /* challage accepted */
-.marquue_section{
+.marquue_section {
     margin-top: 2rem;
 }
+
 .marquee-container {
     width: 100%;
     overflow: hidden;
 
 }
-
 
 .marquee-text {
     animation: marquee 15s linear infinite;
@@ -476,42 +476,62 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .colour_out_side_section {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+
+    }
+
     .stories_card_div {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: none;
+        width: 100%;
+        margin: 0 0;
+        gap: .5rem;
     }
 
     .stories_big_div {
         display: none;
     }
 
-    .colour_out_side_section {
-        width: 100%;
-        margin: auto;
+
+
+    .button_stories {
+        margin: 0 1rem;
+        padding: 1rem 1rem;
+
+
     }
 
     .stories_section {
         width: 100%;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: auto;
+        padding: 1rem;
+
     }
 
     .stories_card img {
         width: 100%;
     }
 
+
+    .card_text_size {
+        padding: .3rem 1rem;
+    }
+
     .colour_section {
         margin-top: 1.6rem;
-
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
-    .stories_card_div {
-        margin: 0 0;
-    }
+
 
     .footer_container {
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem 0;
+
     }
 }
 
